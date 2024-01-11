@@ -1,0 +1,59 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Fonts */
+/* Yandex */
+@font-face {
+  font-family: "YandexSansDisplay-Bold";
+  src: url("./assets/fonts/YandexSansDisplay-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "YandexSansDisplay-Light";
+  src: url("./assets/fonts/YandexSansDisplay-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "YandexSansDisplay-Regular";
+  src: url("./assets/fonts/YandexSansDisplay-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "YandexSansText-Bold";
+  src: url("./assets/fonts/YandexSansText-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "YandexSansText-Light";
+  src: url("./assets/fonts/YandexSansText-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "YandexSansText-Medium";
+  src: url("./assets/fonts/YandexSansText-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "YandexSansText-Regular";
+  src: url("./assets/fonts/YandexSansText-Regular.ttf") format("truetype");
+}
+
+/* Montserrat */
+@font-face {
+  font-family: "Montserrat-Black";
+  src: url("./assets/fonts/Montserrat-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("./assets/fonts/Montserrat-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("./assets/fonts/Montserrat-Regular.ttf") format("truetype");
+}
