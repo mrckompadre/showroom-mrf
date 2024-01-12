@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import html2pdf from "html2pdf.js";
-import { emailjs } from "emailjs-com";
+
 import { kviz, cdiis, page } from "../buffer";
-import { downloadDir } from "@tauri-apps/api/path";
 
 const filename: string =
   kviz.name +
@@ -13,13 +12,6 @@ const filename: string =
 function generatePDF() {
   const element = document.getElementById("pdf");
   html2pdf().from(element).save(filename);
-  setTimeout(sendPdfToEmail, 3000);
-}
-
-function sendPdfToEmail() {
-  const filepath = `${downloadDir()}/${filename}`;
-  const reader = new FileReader();
-  reader.readAsDataURL();
 }
 
 function toKviz() {
@@ -77,8 +69,7 @@ function toKviz() {
 
   <div class="buttons">
     <button @click="toKviz">Назад</button>
-    <button @click="generatePDF" v-if="!status">Сохранить</button>
-    <button v-else>Отправить</button>
+    <button @click="generatePDF">Сохранить</button>
   </div>
 </template>
 
